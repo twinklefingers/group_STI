@@ -10,20 +10,21 @@ employees.forEach(function(peon){
 	empComp.push(peon[0]);
 	var sti;
 	switch (peon[3]) {
-		case 0:
-		case 1:
-		case 2: sti = 0;
-		break;
 		case 3: sti = 0.04;
 		break;
 		case 4: sti = 0.06;
 		break;
 		case 5: sti = 0.10;
 		break;
+		case 0:
+		case 1:
+		case 2:
+		default: sti = 0;
+		break;
 	}
 	if (peon[1].length == 4) {
 		sti += 0.05;
-	} 
+	}
 	if (peon[2] > 65000) {
 		sti -= 0.01;
 	}
