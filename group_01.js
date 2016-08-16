@@ -36,5 +36,4 @@ employees.forEach(function(peon){
 	empComp.push(parseInt(peon[2]) + (peon[2] * sti));
 	empComp.push(Math.round(peon[2] * sti));
 	console.log(empComp);
-}
-);
+});
